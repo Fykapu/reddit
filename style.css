@@ -1,0 +1,55 @@
+/* Main Layout */
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr 1fr 100px;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    column-gap: 2rem;
+}
+
+/* Nav */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-items: start;
+    align-items: center;
+    grid-column: 1 / -1;
+}
+.nav__logo {
+    height: 48px;
+}
+.nav__input {
+    justify-self: stretch;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 15px
+}
+.nav__profile {
+    justify-self: end;
+}
+
+
+section {
+    border: 3px solid salmon
+}
+
+/* Left menu */
+#menu-left {
+    grid-column: 2;
+}
+
+
+/* Right menu */
+#menu-right {
+    grid-column: -3;
+}
+
+
+/* Main content */
+#main-content {
+    grid-column: 3;
+    align-self: stretch;
+}
