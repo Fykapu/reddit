@@ -156,12 +156,39 @@ nav, section {
     grid-auto-rows: fit-content();
 }
 .content-item {
-
-    background-color: aqua;
-    border: 1px solid black;
+    padding: 0.5rem 1rem;
 }
-
-
+.content-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+.content-item__header {
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+}
+.content-item__title {
+    margin: 0.8rem 0;
+    font-size: 1.3rem;
+}
+.content-item__description {
+    margin-bottom: 0.5rem;
+}
+.content-item__footer button {
+    padding: 0.6rem;
+    background-color: var(--grey);
+    border: none;
+    border-radius: 15px;
+    margin: 0 0.1rem;
+}
+.content-item__description, .content-item__header {
+    font-size: 0.9rem;
+    color: grey
+} 
+.divider.content {
+    margin: 0.2rem 0;
+}
+/* Media Queries */
 @media all and (max-width: 1800px) {
     #wrapper {
         column-gap: 0.5rem;
